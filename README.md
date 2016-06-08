@@ -1,12 +1,12 @@
-Vietnamese Analysis Plugin for Elasticsearch
+Vietnamese (without diacritics) Analysis Plugin for Elasticsearch
 ========================================
 
-Vietnamese Analysis plugin integrates Vietnamese language analysis into Elasticsearch.
+Vietnamese (without diacritics) Analysis plugin integrates Vietnamese language without diacritics analysis into Elasticsearch.
 
 In order to install the plugin, simply run:
 
 ```sh
-bin/plugin --url https://dl.dropboxusercontent.com/u/1598491/elasticsearch-analysis-vietnamese-0.2.2.zip --install analysis-vietnamese
+bin/plugin install https://raw.githubusercontent.com/yldbk/elasticsearch-analysis-vietnamese/master/install/elasticsearch-analysis-vietnamese-0.2.2.zip
 
 ```
 
@@ -17,7 +17,7 @@ mvn clean package
 bin/plugin install file:target/releases/elasticsearch-analysis-vietnamese-0.2.2.zip
 ```
 
-*Notes*: To build the plugin you need to clone and build the [vn-nlp-libararies](https://github.com/duydo/vn-nlp-libraries). The plugin uses  [Lê Hồng Phương](http://mim.hus.vnu.edu.vn/phuonglh/) vnTokenizer library. Thanks thầy Lê Hồng Phương for great contribution.
+*Notes*: To build the plugin you need to clone and build the [vn-nlp-libararies](https://github.com/yldbk/vn-nlp-libraries). The plugin uses  [Lê Hồng Phương](http://mim.hus.vnu.edu.vn/phuonglh/) vnTokenizer library customizable version for Vietnamese without diacritics. Thanks thầy Lê Hồng Phương for great contribution.
 
 |Vietnamese Analysis Plugin|Elasticsearch|
 |---|---|
@@ -37,9 +37,9 @@ bin/plugin install file:target/releases/elasticsearch-analysis-vietnamese-0.2.2.
 
 The plugin includes the `vi_analyzer` analyzer and `vi_tokenizer` tokenizer.
 
-The `vi_analyzer` is built using the `vi_tokenizer` tokenizer, the `lowercase` and `stop` filter.
+The `vi_analyzer` is built using the `vi_tokenizer` tokenizer.
 
- The analyzer analyzes `"công nghệ thông tin Việt Nam"` into `"công nghệ thông tin"` and `"việt nam"` tokens.
+ The analyzer analyzes `"Cong nghe thong tin Viet Nam"` into `"Cong nghe thong tin"` and `"Viet Nam"` tokens.
 
 License
 -------
