@@ -1,4 +1,4 @@
-Vietnamese (without diacritics) Analysis Plugin for Elasticsearch
+Vietnamese (without diacritics - Tiếng Việt không dấu) Analysis Plugin for Elasticsearch
 ========================================
 
 Vietnamese (without diacritics) Analysis plugin integrates Vietnamese language without diacritics analysis into Elasticsearch.
@@ -39,7 +39,7 @@ The plugin includes the `vi_analyzer` analyzer and `vi_tokenizer` tokenizer.
 
 The `vi_analyzer` is built using the `vi_tokenizer` tokenizer.
 
- The analyzer analyzes `"Cong nghe thong tin Viet Nam"` into `"Cong nghe thong tin"` and `"Viet Nam"` tokens.
+ The analyzer analyzes `"Cong nghe thong tin Viet Nam"` `(without diacritics - Tiếng Việt Không dấu)` into `"Cong nghe thong tin"` and `"Viet Nam"` tokens.
 
 License
 -------
