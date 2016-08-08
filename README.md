@@ -6,7 +6,7 @@ Vietnamese (without diacritics) Analysis plugin integrates Vietnamese language w
 In order to install the plugin, simply run:
 
 ```sh
-bin/plugin install https://raw.githubusercontent.com/yldbk/elasticsearch-analysis-vietnamese/master/install/elasticsearch-analysis-vietnamese-0.2.3.zip
+bin/plugin install https://raw.githubusercontent.com/tam-vo/elasticsearch-analysis-vietnamese-without-diacritics/master/install/elasticsearch-analysis-vietnamese-0.2.3.zip
 
 ```
 
