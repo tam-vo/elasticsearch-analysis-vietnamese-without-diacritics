@@ -6,7 +6,7 @@ Vietnamese (without diacritics) Analysis plugin integrates Vietnamese language w
 In order to install the plugin, simply run:
 
 ```sh
-bin/plugin install https://raw.githubusercontent.com/yldbk/elasticsearch-analysis-vietnamese/master/install/elasticsearch-analysis-vietnamese-0.2.2.zip
+bin/plugin install https://raw.githubusercontent.com/yldbk/elasticsearch-analysis-vietnamese/master/install/elasticsearch-analysis-vietnamese-0.2.3.zip
 
 ```
 
@@ -14,14 +14,14 @@ Or to build from source, you need to build it with Maven:
 
 ```bash
 mvn clean package
-bin/plugin install file:target/releases/elasticsearch-analysis-vietnamese-0.2.2.zip
+bin/plugin install file:target/releases/elasticsearch-analysis-vietnamese-0.2.3.zip
 ```
 
 *Notes*: To build the plugin you need to clone and build the [vn-nlp-libararies](https://github.com/yldbk/vn-nlp-libraries). The plugin uses  [Lê Hồng Phương](http://mim.hus.vnu.edu.vn/phuonglh/) vnTokenizer library customizable version for Vietnamese without diacritics. Thanks thầy Lê Hồng Phương for great contribution.
 
 |Vietnamese Analysis Plugin|Elasticsearch|
 |---|---|
-| master|2.2.0|
+| master|2.3.2|
 | 0.2.2|2.2.0|
 | 0.2.1.1|2.1.1|
 | 0.2.1|2.1.0|
